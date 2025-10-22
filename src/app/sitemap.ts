@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://naseer-dev.vercel.app'
+  const baseUrl = 'https://naseerdev.netlify.app'
   
   return [
     {
