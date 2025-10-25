@@ -23,17 +23,31 @@ const Education = () => {
 
   const certificates = [
     {
+      title: "Front-End Development Certification",
+      issuer: "Upwork",
+      year: "2024",
+      description: "Official Upwork skill certification demonstrating expertise in modern front-end development, React ecosystem, and best practices.",
+      skills: ["React", "JavaScript", "Front-End Architecture", "Modern Web Development"]
+    },
+    {
+      title: "JavaScript Front-End Development",
+      issuer: "Upwork",
+      year: "2024",
+      description: "Upwork skill certification validating advanced JavaScript and front-end development capabilities for enterprise applications.",
+      skills: ["JavaScript ES6+", "TypeScript", "Front-End Frameworks", "Performance Optimization"]
+    },
+    {
       title: "MERN Stack Development",
       issuer: "Nextbridge Institute",
-      year: "2022",
-      description: "Comprehensive full-stack development course covering MongoDB, Express.js, React, and Node.js.",
+      year: "2021",
+      description: "Comprehensive full-stack development certification covering MongoDB, Express.js, React, and Node.js for building scalable web applications.",
       skills: ["MongoDB", "Express.js", "React", "Node.js", "Full-Stack Development"]
     },
     {
       title: "The Complete JavaScript Course",
       issuer: "Udemy",
       year: "2021",
-      description: "Advanced JavaScript programming course covering modern ES6+ features, async programming, and best practices.",
+      description: "Advanced JavaScript programming course covering modern ES6+ features, async programming, and best practices for professional development.",
       skills: ["JavaScript ES6+", "Async Programming", "DOM Manipulation", "API Integration"]
     }
   ];
@@ -167,8 +181,8 @@ const Education = () => {
                   Continuous Learning Journey
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto mb-6">
-                  I believe in lifelong learning and continuously update my skills through online courses, 
-                  tech conferences, and hands-on projects. This commitment to growth ensures I stay current 
+                  I believe in lifelong learning and continuously update my skills through online courses,
+                  tech conferences, and hands-on projects. This commitment to growth ensures I stay current
                   with the latest technologies and industry best practices.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">

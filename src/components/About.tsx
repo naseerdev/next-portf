@@ -37,8 +37,25 @@ const About = () => {
                   Naseer Ahmed
                 </h3>
                 <h4 className="text-xl text-blue-600 dark:text-blue-400 font-semibold">
-                  Senior Software Engineer (Frontend React Developer)
+                  Full Stack Developer | React | Next.js | Node.js
                 </h4>
+                <div className="flex flex-wrap justify-center lg:justify-start gap-2 mt-3">
+                  <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white border-0">
+                    ⭐ Top Rated Plus
+                  </Badge>
+                  <Badge className="bg-gradient-to-r from-green-500 to-green-600 text-white border-0">
+                    100% Job Success
+                  </Badge>
+                  <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0">
+                    $50K+ Earned
+                  </Badge>
+                  <Badge className="bg-gradient-to-r from-purple-500 to-purple-600 text-white border-0">
+                    6+ Years Experience
+                  </Badge>
+                  <Badge className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white border-0">
+                    2,128+ Hours on Upwork
+                  </Badge>
+                </div>
                 <p className="text-gray-600 dark:text-gray-300 text-lg">
                   Lahore, Pakistan
                 </p>
@@ -80,6 +97,19 @@ const About = () => {
                       linkedin.com/in/naseer-dev
                     </a>
                   </div>
+                  <div className="flex items-center justify-center lg:justify-start space-x-3">
+                    <svg className="h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
+                    </svg>
+                    <a
+                      href="https://www.upwork.com/freelancers/naseerahmed"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition-colors"
+                    >
+                      Upwork Profile (Top Rated Plus)
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,7 +122,10 @@ const About = () => {
                     Professional Summary
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
-                    Experienced Senior Software Engineer specializing in frontend technologies, with a strong background in building complex, high-performance web applications. Adept at leading development teams, driving best coding practices, and implementing scalable solutions using React, TypeScript, and Next.js in dynamic business environments.
+                    Senior Full-Stack Developer with 6+ years of experience building scalable, high-performance web applications for startups, enterprises, and SaaS businesses. Top Rated Plus on Upwork with 100% Job Success across 30+ completed projects and $50K+ in total earnings.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                    I specialize in modern JavaScript frameworks, backend APIs, and responsive UI/UX, delivering clean, maintainable, and production-ready code that drives business growth. From MVPs to full-scale SaaS platforms, I transform ideas into reality with cutting-edge web solutions.
                   </p>
 
                   {/* Key Highlights */}
@@ -104,7 +137,7 @@ const About = () => {
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                         <span className="text-gray-600 dark:text-gray-300">
-                          Team Leadership
+                          SaaS & MVP Development
                         </span>
                       </div>
                       <div className="flex items-center space-x-2">
@@ -116,13 +149,25 @@ const About = () => {
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                         <span className="text-gray-600 dark:text-gray-300">
-                          Scalable Architecture
+                          API Development
                         </span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                         <span className="text-gray-600 dark:text-gray-300">
-                          Modern Technologies
+                          Agile Methodologies
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-gray-600 dark:text-gray-300">
+                          Team Leadership
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-gray-600 dark:text-gray-300">
+                          CI/CD & Deployment
                         </span>
                       </div>
                     </div>
@@ -134,7 +179,7 @@ const About = () => {
                       Core Technologies:
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"].map((tech) => (
+                      {["React", "Next.js", "Vue.js", "Angular", "Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB"].map((tech) => (
                         <Badge
                           key={tech}
                           variant="secondary"

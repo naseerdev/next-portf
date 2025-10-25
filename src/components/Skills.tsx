@@ -6,37 +6,61 @@ const Skills = () => {
     {
       title: "Frontend Technologies",
       skills: [
-        "React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Material UI", "Radix UI"
+        "React.js", "Next.js", "Vue.js", "Astro", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Solid.js"
+      ]
+    },
+    {
+      title: "UI Frameworks & Styling",
+      skills: [
+        "Tailwind CSS", "Material UI", "Chakra UI", "Bootstrap", "Radix UI", "Shadcn UI", "Ant Design"
       ]
     },
     {
       title: "State Management",
       skills: [
-        "Zustand", "Redux", "Context API", "React Query", "SWR"
+        "Zustand", "Redux", "Context API", "React Query", "SWR", "Jotai"
       ]
     },
     {
-      title: "Backend & Database",
+      title: "Backend & APIs",
       skills: [
-        "Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"
+        "Node.js", "Express.js", "REST APIs", "GraphQL", "ChatGPT API", "Third-Party Integrations"
       ]
     },
     {
-      title: "Tools & Development",
+      title: "Databases & BaaS",
       skills: [
-        "Git", "Webpack", "Vite", "Docker", "AWS", "Vercel", "Netlify", "Figma"
+        "PostgreSQL", "MongoDB", "MySQL", "Redis", "Supabase",
+      ]
+    },
+    {
+      title: "CMS & eCommerce",
+      skills: [
+        "WordPress", "Shopify", "WooCommerce", "Headless CMS", "Contentful"
+      ]
+    },
+    {
+      title: "DevOps & Tools",
+      skills: [
+        "Git", "GitHub", "Webpack", "Vite", "Docker", "AWS", "Vercel", "Netlify", "CI/CD", "Server Deployment"
       ]
     },
     {
       title: "Testing & Quality",
       skills: [
-        "Jest", "React Testing Library", "Cypress", "ESLint", "Prettier", "TypeScript"
+        "Jest", "React Testing Library", "Cypress", "TDD", "ESLint", "Prettier", "Code Standards"
       ]
     },
     {
-      title: "Soft Skills",
+      title: "Design & UX",
       skills: [
-        "Team Leadership", "Mentorship", "Code Review", "Agile/Scrum", "Problem Solving", "Communication"
+        "Figma to HTML", "Responsive Design", "Pixel-Perfect Implementation", "Wireframing", "UI/UX Best Practices"
+      ]
+    },
+    {
+      title: "Project Management",
+      skills: [
+        "Agile/Scrum", "Kanban", "Jira", "Trello", "Asana", "ClickUp", "Team Leadership", "Client Communication"
       ]
     }
   ];
@@ -88,8 +112,8 @@ const Skills = () => {
                   Continuous Learning
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-                  I'm passionate about staying up-to-date with the latest technologies and best practices. 
-                  I regularly contribute to open-source projects, attend tech conferences, and continuously 
+                  I&apos;m passionate about staying up-to-date with the latest technologies and best practices.
+                  I regularly contribute to open-source projects, attend tech conferences, and continuously
                   expand my skill set to deliver cutting-edge solutions.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 mt-6">

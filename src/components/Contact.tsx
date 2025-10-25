@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Briefcase } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -27,6 +27,12 @@ const Contact = () => {
       label: "LinkedIn",
       value: "linkedin.com/in/naseer-dev",
       href: "https://linkedin.com/in/naseer-dev"
+    },
+    {
+      icon: Briefcase,
+      label: "Upwork Profile",
+      value: "Top Rated Plus",
+      href: "https://www.upwork.com/freelancers/naseerahmed"
     }
   ];
 
@@ -37,14 +43,19 @@ const Contact = () => {
       href: "https://github.com/naseer-dev"
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/naseer_dev"
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://linkedin.com/in/naseer-dev"
+    },
+    {
+      icon: Briefcase,
+      label: "Upwork",
+      href: "https://www.upwork.com/freelancers/naseerahmed"
+    },
+    {
+      icon: Twitter,
+      label: "Twitter",
+      href: "https://twitter.com/naseer_dev"
     }
   ];
 

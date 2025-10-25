@@ -1,9 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {  MapPin, Building2 } from "lucide-react";
+import { MapPin, Building2 } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
+    {
+      title: "Top Rated Plus Freelancer",
+      company: "Upwork",
+      location: "Remote",
+      period: "Jun 2019 – Present",
+      description: "Top Rated Plus freelancer with 100% Job Success Score, 30+ completed projects, 2,128+ hours worked, and $50K+ total earnings. Delivering high-quality web solutions to clients worldwide.",
+      achievements: [
+        "Achieved and maintained Top Rated Plus status with 100% Job Success Score",
+        "Successfully delivered 30+ projects across diverse industries (eCommerce, SaaS, Educational Platforms)",
+        "Built instructional platform with React, Tailwind CSS, and Next.js - rated 5.0/5.0 by client",
+        "Led frontend development for vendor management system with Material UI and Zustand",
+        "Earned $50K+ total revenue through consistent high-quality delivery and client satisfaction"
+      ],
+      technologies: ["React", "Next.js", "TypeScript", "Node.js", "Material UI", "Tailwind CSS", "Zustand", "Client Communication"]
+    },
     {
       title: "Senior Software Engineer",
       company: "Osol",
@@ -80,17 +95,15 @@ const Experience = () => {
               {experiences.map((exp, index) => (
                 <div
                   key={index}
-                  className={`relative flex items-center ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`relative flex items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
 
                   {/* Card */}
-                  <div className={`ml-12 md:ml-0 w-full md:w-5/12 ${
-                    index % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
-                  }`}>
+                  <div className={`ml-12 md:ml-0 w-full md:w-5/12 ${index % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
+                    }`}>
                     <Card className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300 border-0">
                       <CardHeader className="pb-4">
                         <div className="flex items-start justify-between mb-2">
@@ -116,7 +129,7 @@ const Experience = () => {
                         <p className="text-gray-600 dark:text-gray-300 mb-4">
                           {exp.description}
                         </p>
-                        
+
                         <div className="space-y-3">
                           <h4 className="font-semibold text-gray-900 dark:text-white">
                             Key Achievements:
