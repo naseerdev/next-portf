@@ -12,19 +12,29 @@ A modern, responsive portfolio website showcasing professional experience, proje
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS
+- **Framework**: Next.js 16 with App Router
+- **Runtime**: React 19
+- **Styling**: Tailwind CSS v4
 - **UI Components**: shadcn/ui (Radix UI)
 - **Type Safety**: TypeScript
+- **Theme**: next-themes with dark mode
 - **Icons**: Lucide React
-- **Deployment**: Vercel/Netlify ready
+- **Animations**: Framer Motion
+- **SEO**: Complete metadata, structured data, sitemap
+- **Deployment**: Netlify (Vercel-ready)
 
 ## 📋 Features
 
 - 🎨 Modern, responsive design with dark mode support
 - 📱 Mobile-first approach
-- ⚡ Optimized performance with Next.js 15
-- 🔍 SEO optimized with metadata and sitemap
+- ⚡ Optimized performance with Next.js 16
+- 🔍 **Advanced SEO optimization**:
+  - Complete metadata with Open Graph and Twitter Cards
+  - Rich structured data (Person, Website, ProfessionalService schemas)
+  - Dynamic XML sitemap with priority settings
+  - Optimized robots.txt
+  - PWA manifest with shortcuts
+  - Search engine verification ready
 - 🎯 Sections: About, Experience, Projects, Skills, Education, Contact
 - 🌐 Professional presentation of Upwork achievements
 
@@ -50,20 +60,32 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 src/
 ├── app/
 │   ├── page.tsx          # Main page
-│   ├── layout.tsx        # Root layout with theme provider
+│   ├── layout.tsx        # Root layout with SEO metadata & structured data
 │   ├── globals.css       # Global styles
-│   └── sitemap.ts        # SEO sitemap
+│   └── sitemap.ts        # Dynamic XML sitemap
 ├── components/
-│   ├── About.tsx         # About section with Upwork stats
-│   ├── Experience.tsx    # Work experience timeline
-│   ├── Projects.tsx      # Featured projects showcase
-│   ├── Skills.tsx        # Technical skills grid
-│   ├── Education.tsx     # Education & certifications
-│   ├── Contact.tsx       # Contact information
-│   ├── Header.tsx        # Navigation header
-│   └── ui/              # Reusable UI components
+│   ├── theme/           # Main section components
+│   │   ├── Navbar.tsx
+│   │   ├── Introduction.tsx
+│   │   ├── Profile.tsx
+│   │   ├── WorkProcess.tsx
+│   │   ├── Portfolio.tsx
+│   │   ├── Services.tsx
+│   │   ├── ContactSection.tsx
+│   │   └── Footer.tsx
+│   └── ui/              # Reusable UI components (shadcn)
+│       ├── avatar.tsx
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── dialog.tsx
+│       └── ...more
 └── lib/
     └── utils.ts         # Utility functions
+public/
+├── robots.txt           # Search engine crawling rules
+├── manifest.json        # PWA manifest with shortcuts
+├── sitemap.xml          # Auto-generated sitemap
+└── profile.jpg          # Profile image & OG image
 ```
 
 ## 🎯 Key Sections
@@ -113,6 +135,17 @@ src/
 
 ## 📝 Recent Updates (October 2025)
 
+### SEO Enhancements
+- ✅ Comprehensive metadata configuration with 27+ keywords
+- ✅ Three structured data schemas (Person, Website, ProfessionalService)
+- ✅ Open Graph and Twitter Card optimization
+- ✅ Enhanced PWA manifest with shortcuts and screenshots
+- ✅ Fixed URL consistency across all files
+- ✅ Added search engine verification placeholders
+- ✅ Improved robots.txt and sitemap.ts
+- ✅ Created comprehensive SEO_GUIDE.md
+
+### Portfolio Updates
 - ✅ Added Upwork Top Rated Plus achievements and statistics
 - ✅ Updated with 2,128+ hours and $50K+ earnings metrics
 - ✅ Added Upwork freelancing experience section
@@ -121,17 +154,58 @@ src/
 - ✅ Included Upwork certifications
 - ✅ Added direct Upwork profile links throughout the site
 
+## 🔍 SEO Features
+
+This portfolio is fully optimized for search engines. See [SEO_GUIDE.md](./SEO_GUIDE.md) for detailed information about:
+
+- Complete metadata setup
+- Structured data implementation
+- Sitemap and robots.txt configuration
+- Social media optimization
+- Performance best practices
+- Recommended next steps
+- Monitoring and maintenance
+
+### Quick SEO Setup
+
+1. **Claim your site in Google Search Console**
+   - Submit the sitemap: `https://naseerdev.netlify.app/sitemap.xml`
+
+2. **Add verification tokens**
+   - Update the `verification` object in `src/app/layout.tsx`
+
+3. **Monitor performance**
+   - Use PageSpeed Insights: https://pagespeed.web.dev
+   - Check structured data: https://validator.schema.org
+
+## 🚀 Deployment
+
+### Netlify (Current)
+Already configured with:
+- Static export (`output: 'export'`)
+- Trailing slashes enabled
+- Custom build settings in `netlify.toml`
+
+```bash
+# Build command
+npm run build
+
+# Publish directory
+out/
+```
+
+### Vercel (Alternative)
+Deploy instantly to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/naseer-dev/next-portf)
+
 ## 🚀 Learn More
 
 To learn more about the technologies used:
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [TypeScript](https://www.typescriptlang.org/docs/)
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs) - Next.js features and API
+- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components
+- [TypeScript](https://www.typescriptlang.org/docs/) - Static type checking
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Next.js SEO](https://nextjs.org/learn/seo/introduction-to-seo) - SEO best practices
