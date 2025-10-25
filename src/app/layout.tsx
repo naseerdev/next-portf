@@ -176,13 +176,6 @@ export default function RootLayout({
       "addressRegion": "Punjab",
       "addressCountry": "Pakistan"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "30",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "worksFor": {
       "@type": "Organization",
       "name": "Freelance / Upwork"
@@ -223,6 +216,13 @@ export default function RootLayout({
     "priceRange": "$$",
     "telephone": "+923245503557",
     "email": "thenaseer.dev@gmail.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "30",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "sameAs": [
       "https://github.com/naseer-dev",
       "https://linkedin.com/in/naseer-dev",
