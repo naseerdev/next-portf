@@ -15,21 +15,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Naseer Ahmed - Senior Software Engineer & Frontend Developer",
+    default: "Naseer Ahmed - Top Rated Plus Full-Stack Developer | React, Next.js, Node.js",
     template: "%s | Naseer Ahmed"
   },
-  description: "Experienced Senior Software Engineer specializing in frontend technologies, with a strong background in building complex, high-performance web applications using React, TypeScript, Next.js, and modern web technologies.",
+  description: "Top Rated Plus Full-Stack Developer with 6+ years of experience. 100% Job Success on Upwork with 30+ completed projects and $50K+ earned. Specializing in React, Next.js, TypeScript, Node.js, and modern web technologies.",
   keywords: [
-    "Naseer Ahmed", 
-    "Software Engineer", 
-    "Frontend Developer", 
-    "React Developer", 
-    "TypeScript", 
-    "Next.js", 
-    "JavaScript", 
-    "Web Development", 
-    "Portfolio", 
-    "UI/UX", 
+    "Naseer Ahmed",
+    "Software Engineer",
+    "Frontend Developer",
+    "React Developer",
+    "TypeScript",
+    "Next.js",
+    "JavaScript",
+    "Web Development",
+    "Portfolio",
+    "UI/UX",
     "Full Stack Developer",
     "E-commerce Development",
     "Vendor Management Systems",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://your-site-name.netlify.app",
-    title: "Naseer Ahmed - Senior Software Engineer & Frontend Developer",
-    description: "Experienced Senior Software Engineer specializing in frontend technologies, with a strong background in building complex, high-performance web applications using React, TypeScript, and Next.js.",
+    title: "Naseer Ahmed - Top Rated Plus Full-Stack Developer",
+    description: "Top Rated Plus Full-Stack Developer with 6+ years of experience. 100% Job Success on Upwork with 30+ completed projects and $50K+ earned. Specializing in React, Next.js, TypeScript, and Node.js.",
     siteName: "Naseer Ahmed Portfolio",
     images: [
       {
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naseer Ahmed - Senior Software Engineer & Frontend Developer",
-    description: "Experienced Senior Software Engineer specializing in frontend technologies, with a strong background in building complex, high-performance web applications.",
-    images: ["/api/placeholder/1200/630"],
+    title: "Naseer Ahmed - Top Rated Plus Full-Stack Developer",
+    description: "Top Rated Plus Full-Stack Developer with 6+ years of experience. 100% Job Success on Upwork. Specializing in React, Next.js, TypeScript, and Node.js.",
+    images: ["/profile.jpg"],
     creator: "@naseer_dev",
   },
   robots: {
@@ -93,39 +93,46 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Naseer Ahmed",
-    "jobTitle": "Senior Software Engineer",
-    "description": "Experienced Senior Software Engineer specializing in frontend technologies, with a strong background in building complex, high-performance web applications using React, TypeScript, and Next.js.",
+    "jobTitle": "Top Rated Plus Full-Stack Developer",
+    "description": "Top Rated Plus Full-Stack Developer with 6+ years of experience. 100% Job Success on Upwork with 30+ completed projects and $50K+ earned. Specializing in React, Next.js, TypeScript, Node.js, and modern web technologies.",
     "url": "https://your-site-name.netlify.app",
     "image": "https://your-site-name.netlify.app/profile.jpg",
+    "email": "thenaseer.dev@gmail.com",
+    "telephone": "+923245503557",
     "sameAs": [
-      "https://github.com/naseer-ahmed",
-      "https://linkedin.com/in/naseer-ahmed",
-      "https://twitter.com/naseer_dev"
+      "https://github.com/naseer-dev",
+      "https://linkedin.com/in/naseer-dev",
+      "https://twitter.com/naseer_dev",
+      "https://www.upwork.com/freelancers/naseerahmed"
     ],
     "knowsAbout": [
       "React",
-      "TypeScript", 
       "Next.js",
+      "TypeScript",
       "JavaScript",
-      "Web Development",
+      "Node.js",
+      "Vue.js",
+      "Angular",
+      "Full-Stack Development",
       "Frontend Development",
+      "Backend Development",
       "UI/UX Design",
       "E-commerce Development",
-      "Vendor Management Systems",
-      "Shipment Management"
+      "SaaS Development",
+      "Web Applications"
     ],
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Senior Software Engineer",
-      "description": "Building complex, high-performance web applications using modern frontend technologies"
+      "name": "Full-Stack Developer",
+      "description": "Building scalable, high-performance web applications using modern technologies for startups, enterprises, and SaaS businesses"
     },
     "alumniOf": {
       "@type": "EducationalOrganization",
-      "name": "University of Karachi"
+      "name": "University of South Asia"
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Karachi",
+      "addressLocality": "Lahore",
       "addressCountry": "Pakistan"
     }
   };
@@ -146,13 +153,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            
-        {children}
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+
+          {children}
         </ThemeProvider>
       </body>
     </html>

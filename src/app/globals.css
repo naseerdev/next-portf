@@ -116,7 +116,39 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Work Sans", var(--font-sans), sans-serif;
   }
+}
+
+/* Theme-specific styles */
+.introduction-profile-background {
+  background: radial-gradient(circle at 12% 100%,
+      #ffe2b0f5 1% 5px,
+      transparent 15%),
+    radial-gradient(circle at 95% -15%, #da4df166 5%, transparent 30%),
+    radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%);
+}
+
+.blog-background {
+  background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+}
+
+.content-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl md:text-5xl font-semibold;
+}
+
+.btn-primary-theme {
+  @apply bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg;
+}
+
+.bg-highlight {
+  @apply bg-gradient-to-r from-purple-200/50 to-indigo-200/50 dark:from-purple-900/30 dark:to-indigo-900/30;
 }
